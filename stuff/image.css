@@ -1,0 +1,46 @@
+.picture {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+}
+.picture-wrapper {
+  position: relative;
+}
+.image-text {
+  color: #fff;
+}
+.image-text1 {
+  color: #fff;
+}
+.image-wrapper-container1 {
+  width: 20%;
+  height: 50%;
+  display: block;
+  padding-left: 40%;
+  padding-top: 10%;
+  position: relative;
+}
+.image-wrapper-container {
+  width: 40%;
+  height: 50%;
+  padding-left: 30%;
+  padding-top: 20%;
+}
+.image-wrapper {
+  position: relative;
+}
+.picture-wrapper > img {
+  display: block;
+  width: 100%;
+}
+.image-wrapper > img {
+  background: transparent;
+  display: block;
+  width: 100%;
+}
+.text-conteiner {
+  border: 1px slid #f00;
+  width: 100%;
+}

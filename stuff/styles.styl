@@ -1,0 +1,52 @@
+@import 'peremenue.styl'
+@import 'color-classes.styl'
+@import 'item.styl'
+@import 'image.styl'
+
+body
+  background-color #223055
+
+.container
+  width 70%
+  margin-top 5%
+  margin-left 15%
+  max-width 1199px
+  min-width 252px
+  position relative
+
+.container-box
+  margin-top 5%
+  height 1000px
+
+.container-text
+  color white
+  font-size 3rem
+
+.flex-container
+  display flex
+  flex-direction row
+  flex-wrap wrap
+
+[class='col-'] {
+  box-sizing border-box
+}
+
+@media screen and (max-width: $mobile - 1px)
+  for colNumber in (1...13)
+    .col-xs-{colNumber}
+      flex-basis colNumber*$OneColSize
+
+@media screen and (min-width: $mobile) and (max-width: $laptop - 1px)
+  for colNumber in (1...13)
+    .col-md-{colNumber}
+      flex-basis colNumber*$OneColSize
+
+@media screen and (min-width: $laptop) and (max-width: $desktop - 1px)
+  for colNumber in (1...13)
+    .col-l-{colNumber}
+      flex-basis colNumber*$OneColSize
+
+@media screen and (min-width: $desktop)
+  for colNumber in (1...13)
+    .col-l-{colNumber}
+      flex-basis colNumber*$OneColSize
